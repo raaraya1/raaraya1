@@ -1,0 +1,12 @@
+body {
+  font-family: 'Roboto Slab', serif;
+}
+header {
+  margin-top: 75px;
+}
+
+.mt-2 {
+    margin-top: .5rem!important;
+    margin-bottom: .5rem;
+    background: rgb(245,245, 245);
+}
