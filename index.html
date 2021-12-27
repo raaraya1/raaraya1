@@ -8,7 +8,7 @@
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-KS94LSR');</script>
-    <!-- End Google Tag Manager -->  
+    <!-- End Google Tag Manager -->
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
     <!-- bootstrap4-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--custom css-->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/css/main.css">
     <!--scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
   </head>
@@ -40,6 +40,7 @@
           <a class="nav-link active" aria-current="page" href="#Home">Home</a>
           <a class="nav-link" href="#Linear_Models">Linear Models</a>
           <a class="nav-link" href="#Fastai">Fastai</a>
+          <a class="nav-link" href="#sklearn">Sklearn</a>
           <a class="nav-link" href="#Contact">Contact</a>
         </div>
       </div>
@@ -57,7 +58,7 @@
       </p>
       <p style="margin-left: 20%; margin-right: 20%; text-align: justify;">En esta espero interesarte, de una manera entretenida e interactiva, por diferentes materias y herramientas las cuales me han llegado a ser de utilidad en mas de una ocasión.
       </p>
-      <p style="margin-left: 20%; margin-right: 20%; text-align: justify;">Así, también te comento que, en lo personal, no tengo ningún titulo como ingeniero informático o como programador, simplemente siento una afición por la programación.  Esto te lo aclaro porque mucho de lo que te puedas encontrar en mis repositorios no se encuentran apropiadamente ajustados y depurados a un lenguaje de programación. A pesar de ello, aún tengo fe de que estos te puedan servir de guía o utilidad en tus trabajos o futuros proyectos.
+      <p style="margin-left: 20%; margin-right: 20%; text-align: justify;">Así, también te comento que, en lo personal, no tengo ningún titulo como ingeniero informático o como programador, simplemente siento una afición por esta.  Esto te lo aclaro porque mucho de lo que te puedas encontrar en mis repositorios no se encuentran apropiadamente ajustados y depurados a un lenguaje de programación. A pesar de ello, aún tengo fe de que estos te puedan servir de guía o utilidad en tus trabajos o futuros proyectos.
       </p>
     </div>
   </div>
@@ -112,7 +113,34 @@
           </div>
           <div class="col-md-6">
             <div class="Fastai-right">
-              <img src="img/Fastai.png" style="width: 100%; height: 350px;">
+              <img src="img/fastai.png" style="width: 100%; height: 350px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- sklearn -->
+    <section id="sklearn">
+      <div class="container mt-5">
+        <div class="row" style="align-items: center;">
+          <div class="col-md-6">
+            <div class="sklearn-left my-auto">
+              <img src="img/sklearn.png" style="width: 90%;" class=center>
+            </div>
+          </div>
+          <div class="sklearn-right-box col-md-6" style="
+          background: rgb(52, 52, 52);
+          border-radius: 5px;
+          color: rgb(255, 255, 255);
+          ">
+            <div class="sklearn-right mt-5 my-auto" >
+            <h2>sklearn</h2>
+            <p style="text-align: justify">Sklearn es una de las bibliotecas de Python más completas enfocadas en la elaboración de algoritmos de machine learning. Así, esta incluye varios de los modelos más conocidos en cuanto a tareas de aprendizaje supervisado (clasificación y regresiones) y tareas de aprendizaje no supervisado (clustering). Además, esta cuenta con otros varios sets de herramientas que te permitirán preparar y corregir los datos, optimizar los parámetros de los algoritmos y rescatar sus principales métricas de desempeño.
+            </p>
+            <p style="text-align: justify">Por último, aquí te dejo un enlace a su pagina principal para que te puedas ir interiorizando en esta biblioteca <a href="https://scikit-learn.org/stable/index.html">(https://scikit-learn.org/stable/index.html)</a> y una demo para que hagas un vistazo rápido de lo que puedes hacer con esta.
+            </p>
+            <a href="https://share.streamlit.io/raaraya1/sklearn/main/app.py" class="btn btn-outline-secondary header-btn btn-lg mt-2">Demo</a>
             </div>
           </div>
         </div>
@@ -209,12 +237,24 @@
      distance: '300px'
    })
 
-   sr.reveal('.contact', {
+   sr.reveal('.sklearn-left', {
      duration: 4000,
-     origin: 'bottom',
+     origin: 'top',
      distance: '300px'
    })
 
+   sr.reveal('.sklearn-right-box', {
+     duration: 4000,
+     origin: 'right',
+     distance: '300px'
+   })
+
+
+   sr.reveal('.contact', {
+     duration: 5000,
+     origin: 'bottom',
+     distance: '300px'
+   })
 
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
