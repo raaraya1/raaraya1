@@ -41,11 +41,14 @@
           <a class="nav-link" href="#Linear_Models">Linear Models</a>
           <a class="nav-link" href="#Fastai">Fastai</a>
           <a class="nav-link" href="#sklearn">Sklearn</a>
+          <a class="nav-link" href="#Databases">Databases</a>
           <a class="nav-link" href="#Contact">Contact</a>
         </div>
       </div>
     </div>
   </nav>
+
+
 
   <header id="Home">
     <!-- Introduccion -->
@@ -144,6 +147,36 @@
         </div>
       </div>
     </section>
+
+    <!-- Databases -->
+    <section id="Databases">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="Databases-left-box col-md-6 my-auto" style="
+              background: rgb(52, 52, 52);
+              color: white;
+              border-radius: 5px;
+          ">
+            <div class="Databases-left mt-5">
+              <h2>Databases</h2>
+              <p>Sobre los muchos temas que se encuentran relacionados al manejo de bases de datos, en esta sección se abordaron los siguientes:
+              </p>
+              <p>Web Scraping: El objetivo es recolectar y guardar información contenida en paginas web. Para esto recomiendo utilizar las bibliotecas de beautifulsoup4, mechanicalsoup y/o pandas.
+              </p>
+              <p>SQL remoto: El objetivo es establecer una conexión con un servidor de SQL remoto y poder ejecutar operaciones básicas sobre los datos almacenados. Así, se utilizaron las bibliotecas de psycopg2 y mysql para cumplir con este objetivo.
+              </p>
+              <a href="https://share.streamlit.io/raaraya1/databases/main/app.py" class="btn btn-outline-secondary header-btn btn-lg mt-2">Demo</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="Databases-right">
+              <img src="img/Databases.png" style="width: 80%; height: 300px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <!-- contact -->
     <section id="Contact">
@@ -247,9 +280,21 @@
      distance: '300px'
    })
 
+   sr.reveal('.Databases-right', {
+     duration: 5000,
+     origin: 'top',
+     distance: '300px'
+   })
+
+   sr.reveal('.Databases-left-box', {
+     duration: 5000,
+     origin: 'left',
+     distance: '300px'
+   })
+
 
    sr.reveal('.contact', {
-     duration: 5000,
+     duration: 6000,
      origin: 'bottom',
      distance: '300px'
    })
