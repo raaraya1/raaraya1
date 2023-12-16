@@ -42,6 +42,7 @@
           <a class="nav-link" href="#Fastai">Fastai</a>
           <a class="nav-link" href="#sklearn">Sklearn</a>
           <a class="nav-link" href="#Databases">Databases</a>
+          <a class="nav-link" href="#Time-Series">Time-Series</a>
           <a class="nav-link" href="#Contact">Contact</a>
         </div>
       </div>
@@ -177,6 +178,34 @@
       </div>
     </section>
 
+    <!-- time_series -->
+    <section id="Time-Series">
+      <div class="container mt-5">
+        <div class="row" style="align-items: center;">
+          <div class="col-md-6">
+            <div class="time_series-left my-auto">
+              <img src="img/time_series.png" style="width: 90%;" class=center>
+            </div>
+          </div>
+          <div class="time_series-right-box col-md-6" style="
+          background: rgb(52, 52, 52);
+          border-radius: 5px;
+          color: rgb(255, 255, 255);
+          ">
+            <div class="time_series-right mt-5 my-auto" >
+            <h2>Time Series Forecasting</h2>
+            <p style="text-align: justify">Si tu interes se encuentra en pronosticar series de tiempo, te recomiendo el siguiente libro: <a href="https://www.simonandschuster.co.uk/books/Time-Series-Forecasting-in-Python/Marco-Peixeiro/9781638351474">(Time Series Forecasting in Python by Marco Peixeiro)</a>
+            </p>
+            <p style="text-align: justify">En esta obra se enseña a obtener predicciones inmediatas y significativas a partir de datos basados en el tiempo. Asi, aprenderás métodos estadísticos como Box-Jenkins y otros de aprendizaje profundo para series de tiempo mas complejas. Por ultimo, y en cuanto a las librerias de python usadas en el libro, te puedo comentar que estan son principalmente: `statsmodels`, `TensorFlow` y `Prophet`.
+            </p>
+            <a href="https://huggingface.co/spaces/raaraya/time_series_demo" class="btn btn-outline-secondary header-btn btn-lg mt-2">Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
 
     <!-- contact -->
     <section id="Contact">
@@ -292,9 +321,20 @@
      distance: '300px'
    })
 
-
-   sr.reveal('.contact', {
+  sr.reveal('.time_series-left', {
      duration: 6000,
+     origin: 'top',
+     distance: '300px'
+   })
+
+   sr.reveal('.time_series-right-box', {
+     duration: 6000,
+     origin: 'right',
+     distance: '300px'
+   })
+ 
+   sr.reveal('.contact', {
+     duration: 7000,
      origin: 'bottom',
      distance: '300px'
    })
