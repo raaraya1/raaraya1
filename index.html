@@ -43,6 +43,7 @@
           <a class="nav-link" href="#sklearn">Sklearn</a>
           <a class="nav-link" href="#Databases">Databases</a>
           <a class="nav-link" href="#Time-Series">Time-Series</a>
+          <a class="nav-link" href="#Opt-Algorithms">Opt-Algorithms</a>
           <a class="nav-link" href="CV_Rodrigo_Araya.pdf">Curriculum</a>
           <a class="nav-link" href="#Contact">Contact</a>
         </div>
@@ -206,7 +207,32 @@
       </div>
     </section>
 
-
+    <!-- Opt-Algorithms -->
+    <section id="Opt-Algorithms">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="Opt_Algorithms-left-box col-md-6 my-auto" style="
+              background: rgb(52, 52, 52);
+              color: white;
+              border-radius: 5px;
+          ">
+            <div class="Opt_Algorithms-left mt-5">
+              <h2>Opt_Algorithms</h2>
+              <p>“Optimization Algorithms” es una joya para los entusiastas de la optimización! Escrito por Alaa Khamis, este libro ofrece adaptaciones en Python de algoritmos de búsqueda determinísticos, como Simulated Annealing y Tabu Search, junto con algoritmos evolutivos.
+              </p>
+              <p>Asi, incluyo una demo con varios de estos algoritmos abarcando hasta el capítulo 8 del libro (Algoritmos Evolutivos y variantes)
+              </p>
+              <a href="https://huggingface.co/spaces/raaraya/Opt_Alg_Demo" class="btn btn-outline-secondary header-btn btn-lg mt-2">Demo</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="Opt_Algorithms-right">
+              <img src="img/Opt_Algorithms.png" style="width: 80%; height: 300px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- contact -->
     <section id="Contact">
@@ -333,9 +359,22 @@
      origin: 'right',
      distance: '300px'
    })
+
+   sr.reveal('.Opt_Algorithms-right', {
+     duration: 7000,
+     origin: 'top',
+     distance: '300px'
+   })
+
+   sr.reveal('.Opt_Algorithms-left-box', {
+     duration: 7000,
+     origin: 'left',
+     distance: '300px'
+   })
+
  
    sr.reveal('.contact', {
-     duration: 7000,
+     duration: 8000,
      origin: 'bottom',
      distance: '300px'
    })
